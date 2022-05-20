@@ -4,6 +4,10 @@ trigger:
 #pool:
 #  vmImage: 'Ubuntu-16.04'
 
+variables:
+- name: NODE.EXTRA.CA.CERTS
+  value: file
+
 steps:
 - task: NodeTool@0
   inputs:
